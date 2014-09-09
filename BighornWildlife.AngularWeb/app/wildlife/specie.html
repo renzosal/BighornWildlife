@@ -1,0 +1,37 @@
+﻿<div class="page">
+    <div class="page-header">
+        <h1>{{vm.specie.name}}</h1>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <img ng-src="{{vm.specie.image != null  && vm.specie.image || '../../assets/images/no-photo.gif'}}">
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">
+                        {{vm.specie.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">Territory/Sightings</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="input-group">
+                            <input type="text" class="form-control" datepicker-popup="MM/dd/yyyy" ng-model="vm.date" is-open="vm.dateOpened" ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary" ng-click="vm.open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div specie-map></div>
+            </div>
+        </div>
+    </div>
+</div>

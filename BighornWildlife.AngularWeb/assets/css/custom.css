@@ -1,0 +1,28 @@
+﻿.jumbotron {
+    background-image: url('/assets/images/bighorns.JPG');
+    background-position: 50% 10%;
+    text-shadow: 2px 2px #585858;
+}
+
+#loading-bar .bar {
+    background: #df691a;
+    height: 4px;
+}
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  #df691a;
+  border-left-color: #df691a;
+}
+
+.page { 
+    margin-top: 60px;
+}
+
+#species-list .list-group-item {
+    margin-bottom: 10px;
+}
+
+#map-canvas {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
